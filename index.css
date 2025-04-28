@@ -1,0 +1,55 @@
+h1{
+    margin: 50px 0 30px;
+    text-align: center;
+}
+.faq-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.faq{
+    background-color: transparent;
+    border:1px solid burlywood;
+    margin:20px 0;
+    padding:30px;
+    position: relative;
+    overflow: hidden;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.faq.active{
+    background-color: #ffff;
+    box-shadow:0 3px 4px;
+}
+
+body{
+    background-color: #ffff;
+}
+
+.faq-toggle{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top:30px;
+    right:30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+.faq-toggle .fa-times{
+    color:black;
+    display: none;
+}
+.faq.active .faq-toggle .fa-times{
+    display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down{
+    display: none;
+}
+.faq.active .faq-toggle{
+background-color: burlywood;
+}
